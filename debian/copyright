@@ -18,7 +18,10 @@ License: Apache-2.0
  On Debian systems, the full text of the Apache License version 2 can be found
  in the file `/usr/share/common-licenses/Apache-2.0'.
 
-Files: debian/*
+Files: Makefile
+       lief-patchelf.spec
+       debian/*
+       
 Copyright: 2025 Center for High Throughput Computing,
                 HTCondor Team, Condor Team,
                 Computer Sciences Department,
