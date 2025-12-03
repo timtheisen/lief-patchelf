@@ -1,0 +1,5 @@
+lief-patchelf (0.17.1-1) stable; urgency=medium
+
+  * Initial packaging of lief-patchelf binaries
+
+ -- Tim Theisen <tim@cs.wisc.edu>  Wed, 03 Dec 2025 14:17:26 -0600

@@ -1,0 +1,17 @@
+Source: lief-patchelf
+Section: utils
+Priority: optional
+Maintainer: Tim Theisen <tim@cs.wisc.edu>
+Build-Depends: debhelper-compat (= 13), unzip
+Standards-Version: 4.6.0
+Homepage: https://lief.re/doc/latest/tools/lief-patchelf/index.html
+Rules-Requires-Root: no
+
+Package: lief-patchelf
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: patchelf based on LIEF Rust bindings
+ lief-patchelf is an implementation of the original patchelf created by
+ NixOS (NixOS/patchelf), based on the LIEF.  This LIEF-based version is
+ written in Rust, offering a more robust, modern, and maintainable
+ implementation compared to the original project.
