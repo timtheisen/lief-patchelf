@@ -21,7 +21,6 @@ License: Apache-2.0
 Files: Makefile
        lief-patchelf.spec
        debian/*
-       
 Copyright: 2025 Center for High Throughput Computing,
                 HTCondor Team, Condor Team,
                 Computer Sciences Department,

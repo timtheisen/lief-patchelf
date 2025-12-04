@@ -1,7 +1,7 @@
 VERSION=0.17.1
 ARCH := $(shell arch)
 
-PACKAGE = lief-patchelf-$(VERSION)-$(ARCH)-gnu.zip
+PACKAGE = lief-patchelf-$(VERSION)-$(ARCH)-musl.zip
 
 all: unpack
 

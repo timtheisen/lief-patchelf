@@ -5,8 +5,8 @@ Summary:	Patchelf based on LIEF Rust bindings
 
 License:	Apache-2.0
 URL:		https://lief.re//doc/latest/tools/lief-patchelf/index.html
-Source0:	%{name}-%{version}-x86_64-gnu.zip
-Source1:	%{name}-%{version}-aarch64-gnu.zip
+Source0:	%{name}-%{version}-x86_64-musl.zip
+Source1:	%{name}-%{version}-aarch64-musl.zip
 Source2:	Makefile
 Source3:	LICENSE
 
