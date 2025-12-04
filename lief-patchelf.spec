@@ -1,14 +1,14 @@
 Name:		lief-patchelf
 Version:	0.17.1
 Release:	1%{?dist}
-Summary:	patchelf based on LIEF Rust bindings
+Summary:	Patchelf based on LIEF Rust bindings
 
 License:	Apache-2.0
 URL:		https://lief.re//doc/latest/tools/lief-patchelf/index.html
-Source0:	lief-patchelf-0.17.1-x86_64-musl.zip
-Source1:	lief-patchelf-0.17.1-aarch64-musl.zip
-Source2:	LICENSE
-
+Source0:	%{name}-%{version}-x86_64-gnu.zip
+Source1:	%{name}-%{version}-aarch64-gnu.zip
+Source2:	Makefile
+Source3:	LICENSE
 
 BuildRequires:	unzip
 
@@ -19,21 +19,18 @@ written in Rust, offering a more robust, modern, and maintainable
 implementation compared to the original project.
 
 %prep
-%ifarch x86_64
-unzip %{SOURCE0}
-%endif
-%ifarch aarch64
-unzip %{SOURCE1}
-%endif
+cp -a %{SOURCE0} %{_builddir}
+cp -a %{SOURCE1} %{_builddir}
+cp -a %{SOURCE2} %{_builddir}
+cp -a %{SOURCE3} %{_builddir}
 
 %build
-# Packaing pre-built binaries
+make %{?_smp_mflags}
 
 %install
-mkdir -p %{buildroot}%{_usr}
-mv bin share %{buildroot}%{_usr}
-mkdir -p %{buildroot}%{_defaultlicensedir}/lief-patchelf
-cp -a %{SOURCE2} %{buildroot}%{_defaultlicensedir}/lief-patchelf
+%make_install
+
+%check
 
 %files
 %{_bindir}/lief-patchelf
