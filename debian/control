@@ -2,7 +2,7 @@ Source: lief-patchelf
 Section: utils
 Priority: optional
 Maintainer: Tim Theisen <tim@cs.wisc.edu>
-Build-Depends: debhelper-compat (= 13), unzip
+Build-Depends: debhelper-compat (= 12), unzip
 Standards-Version: 4.6.0
 Homepage: https://lief.re/doc/latest/tools/lief-patchelf/index.html
 Rules-Requires-Root: no
