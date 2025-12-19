@@ -36,7 +36,11 @@ make %{?_smp_mflags}
 %{_bindir}/lief-patchelf
 %{_mandir}/man1/lief-patchelf.1.gz
 %{_datadir}/zsh/site-functions/_lief-patchelf
+%if 0%{?suse_version}
+%{_datadir}/doc/lief-patchelf/README.md
+%else
 %doc README.md
+%endif
 %license LICENSE
 
 %changelog
