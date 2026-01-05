@@ -1,5 +1,5 @@
 #!/bin/bash
-version=0.17.1
+version=0.17.2
 package=lief-patchelf
 tdir=$(mktemp -d)
 mkdir "${tdir}/${package}_${version}"
