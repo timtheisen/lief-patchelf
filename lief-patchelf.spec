@@ -1,3 +1,16 @@
+%if 0%{?suse_version}
+%if %{suse_version} == 1500
+%if "%{os_release_id}" == "sles"
+%global dist .sles15sp5
+%else
+%global dist .leap15
+%endif
+%endif
+%if %{suse_version} == 1600
+%global dist .leap16
+%endif
+%endif
+
 Name:		lief-patchelf
 Version:	0.17.2
 Release:	1%{?dist}
