@@ -1,3 +1,9 @@
+lief-patchelf (0.17.5-1) stable; urgency=medium
+
+  * Update lief-patchelf binaries
+
+ -- Tim Theisen <tim@cs.wisc.edu>  Mon, 09 Mar 2026 16:00:00 -0500
+
 lief-patchelf (0.17.2-1) stable; urgency=medium
 
   * Update lief-patchelf binaries

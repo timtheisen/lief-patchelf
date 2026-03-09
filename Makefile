@@ -1,4 +1,4 @@
-VERSION=0.17.2
+VERSION=0.17.5
 ARCH := $(shell arch)
 
 PACKAGE = lief-patchelf-$(VERSION)-$(ARCH)-musl.zip
