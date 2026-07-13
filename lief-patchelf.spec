@@ -12,7 +12,7 @@
 %endif
 
 Name:		lief-patchelf
-Version:	0.17.6
+Version:	1.0.0
 Release:	1%{?dist}
 Summary:	Patchelf based on LIEF Rust bindings
 
@@ -57,6 +57,9 @@ make %{?_smp_mflags}
 %license LICENSE
 
 %changelog
+* Mon Jul 13 2026 Tim Theisen <tim@cs.wisc.edu> - 1.0.0-1
+- Update lief-patchelf binaries
+
 * Fri Mar 20 2026 Tim Theisen <tim@cs.wisc.edu> - 0.17.6-1
 - Update lief-patchelf binaries
 
